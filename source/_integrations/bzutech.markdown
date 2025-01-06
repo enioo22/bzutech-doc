@@ -27,7 +27,7 @@ To use this integration, you need:
 
 ## Configuration
 
-- Login with your Bzu Cloud account 
+- Login with your Bzu Cloud account
 
 ![Login step](/images/integrations/bzutech/bzutech-login-step.png)
 
@@ -48,32 +48,41 @@ To use this integration, you need:
 Available devices and sensors:
 
 - EP101:
-  - Temperature, Humidity, Luminosity.
+  - Temperature (ºC), Humidity (%), Luminosity (lx).
 - EP111:
-  - Temperature, Humidity, Luminosity, PIR.
+  - Temperature (ºC), Humidity (%), Luminosity (lx), PIR (motion detected).
 - EP121:
-  - Temperature, Humidity, Luminosity, PIR, Door opening status.
+  - Temperature (ºC), Humidity (%), Luminosity (lx), PIR (motion detected), Door opening status.
 - EP200:
-  - Temperature, Humidity, VOC, Particulate Matter PM(0.5, 1.0, 2.5, 4.0, 10), Door opening status.
+  - Temperature (ºC), Humidity (%), VOC, Particulate Matter PM(0.5, 1.0, 2.5, 4.0, 10), Door opening status.
 - EP300:
-  - Sound(dB).
+  - Sound (dB).
 - EP400:
-  - Voltage, Current, Active Power, Apparent Power.
+  - Voltage (V), Current (A), Active Power (W), Apparent Power (VA).
 - EP500:
-  - Relative Pressure.
+  - Relative Pressure (Pa).
 - EP510:
-  - Pressure.
+  - Pressure (atm).
 - EP610:
-  - Water Depth.
+  - Water Depth (m).
 - EP700:
-  - Water Flow, Water Volume.
+  - Water Flow  (L/s), Water Volume (L).
 - EP800:
-  - Water PH, water
-
+  - Water PH, Water ORP (mV), Conductivity (µmhos/cm), Temperature (ºC) and Humidity (%).
 
 ## Troubleshooting
 
-Every observed issue can be resolved by reloading the integration/service.
+Here are some common issues you might encounter:
+
+### Authentication failed
+
+- Verify your BzuCloud credentials
+
+### Sensor shows unavailable
+
+- Check if the device is online in BzuCloud
+- Reload the integration
+
+For other issues, try reloading the integration or check the Home Assistant logs for more details.
 
 {% include integrations/config_flow.md %}
-
